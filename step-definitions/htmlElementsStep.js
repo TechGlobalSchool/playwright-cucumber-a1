@@ -8,10 +8,6 @@ Given(/^user navigates to "([^"]*)"$/, async function(url) {
   await page.goto(url);
 });
 
-When(/^user clicks on the "([^"]*)" card$/, async function(card) {
-	await page.locator('#card-1').click()
-});
-
 Then(/^user should see "([^"]*)" page heading$/, async function(heading) {
 	const head = page.locator('#main_heading')  
   await expect(head).toHaveText(heading)
