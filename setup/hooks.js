@@ -3,7 +3,7 @@ const { chromium, expect } = require("@playwright/test");
 setDefaultTimeout(60 * 1000)
 
 const options = {
-  headless: true,
+  headless: false,
   retries: 1,
   video: "on",
 };
